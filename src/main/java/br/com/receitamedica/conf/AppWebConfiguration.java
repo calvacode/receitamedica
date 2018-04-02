@@ -10,8 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackageClasses={HomeController.class})
 public class AppWebConfiguration {
   @Bean
-  public InternalResourceViewResolver
-  internalResourceViewResolver() {
+  public InternalResourceViewResolver internalResourceViewResolver() {
     InternalResourceViewResolver resolver =
         new InternalResourceViewResolver();
     resolver.setPrefix("/WEB-INF/views/");
